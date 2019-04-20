@@ -1,18 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gird_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:columnCount="2"
+        app:rowCount="3">
 
-</android.support.constraint.ConstraintLayout>
+        <ImageButton
+            android:id="@+id/image_Boxing"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@color/back"
+            android:scaleType="fitCenter"
+            android:tag="boxing"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/boxing" />
+
+        <ImageButton
+            android:id="@+id/image_aikido"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@color/back"
+            android:scaleType="fitCenter"
+            android:tag="aikido"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/aikido" />
+
+        <ImageButton
+            android:id="@+id/image_karate"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@color/back"
+            android:scaleType="fitCenter"
+            android:tag="karate"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/karate" />
+
+        <ImageButton
+            android:id="@+id/image_kickboxing"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@color/back"
+            android:scaleType="fitCenter"
+            android:tag="kickboxing"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/kickboxing" />
+
+        <ImageButton
+            android:id="@+id/image_taekwondo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@color/back"
+            android:scaleType="fitCenter"
+            android:tag="taekwondo"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/taekwondo" />
+
+        <ImageButton
+            android:id="@+id/image_judo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@android:color/background_light"
+            android:scaleType="fitCenter"
+            android:tag="judo"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/judo" />
+    </android.support.v7.widget.GridLayout>
+</RelativeLayout>
